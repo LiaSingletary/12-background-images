@@ -1,0 +1,179 @@
+/* ---------- Page ---------- */
+
+body {
+    /* Colors used across the site */
+    --orange: #f5924a;
+    --blue: #1d93b9;
+    --cream: #fdf9ee;
+    --mint: #bfe8e2;
+    --code-red: #e8603c;
+    --code-bg: #fdf3e0;
+    --code-border: #f7dcc0;
+    --line: #f2d9a8;
+    --text: #333333;
+    --white: #ffffff;
+
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    color: var(--text);
+
+    /* Tiled pattern that stays in place while the page scrolls */
+    background-color: var(--mint);
+    background-image: url("images/pattern.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+/* ---------- Header ---------- */
+
+.site-header {
+    background-color: var(--orange);
+    border-bottom: 4px solid var(--blue);
+    padding: 30px 0;
+}
+
+.header-content {
+    width: 775px;
+    margin: 0 auto;
+}
+
+.site-title {
+    margin: 0 0 15px 0;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70px;
+    color: var(--white);
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 7px 18px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/* ---------- Hero banner ---------- */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 590px;
+    border-bottom: 4px solid var(--blue);
+
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+
+/* ---------- Main content card ---------- */
+
+main {
+    padding-bottom: 100px;
+}
+
+.card {
+    width: 725px;
+    margin: 50px auto 0 auto;
+    padding: 50px;
+    background-color: var(--cream);
+}
+
+.card-title {
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 60px;
+    color: var(--blue);
+}
+
+.card-subtitle {
+    margin: 0 0 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--code-red);
+}
+
+.tags {
+    margin: 0 0 25px 0;
+}
+
+.text {
+    margin: 0 0 20px 0;
+    font-size: 21px;
+    line-height: 38px;
+}
+
+.code {
+    padding: 2px 8px;
+    border: 1px solid var(--code-border);
+    border-radius: 3px;
+    background-color: var(--code-bg);
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    color: var(--code-red);
+}
+
+.text-link {
+    color: var(--blue);
+    text-decoration: underline dotted;
+}
+
+
+/* ---------- "That's a wrap" box ---------- */
+
+.wrap-up {
+    width: 725px;
+    margin: 36px auto 0 auto;
+    padding: 40px 50px 40px 50px;
+    border-left: 8px solid var(--orange);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.wrap-up-title {
+    margin: 0 0 15px 0;
+    font-family: "Pacifico", cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.wrap-up-text {
+    margin: 0;
+    font-size: 21px;
+    line-height: 38px;
+}
